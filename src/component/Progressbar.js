@@ -3,7 +3,14 @@ import React, { useState } from "react";
 import { useSpring, animated } from "@react-spring/web";
 import "./progressbar.css";
 
-function Progressbar({ score, duration, bgcolor1, bgcolor2 }) {
+function Progressbar({
+  skill,
+  skillColor,
+  score,
+  duration,
+  bgcolor1,
+  bgcolor2,
+}) {
   const percentage = score;
   const [isMax, SetIsMax] = useState(false);
   const props = useSpring({
@@ -18,13 +25,17 @@ function Progressbar({ score, duration, bgcolor1, bgcolor2 }) {
   });
   return (
     <div className="container">
-      <h3 className="skill">Javascript</h3>
+      <h2 className="skill" style={{ color: skillColor }}>
+        {skill}:
+      </h2>
+      <p>Beginner</p>
       <div className="bar-frame" onClick={() => SetIsMax(!isMax)}>
         <animated.div className="bar-fill" style={{ ...props }} />
         <animated.div className="indicator" style={percentageProps}>
           {percentageProps.number.to((value) => `${Math.floor(value)}%`)}
         </animated.div>
       </div>
+      <p>Expert</p>
     </div>
   );
 }

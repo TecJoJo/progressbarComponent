@@ -4,6 +4,7 @@
 }
 
 .container{
+   position: relative; 
    width:100%;
    height: auto;
    background-color: transparent;
@@ -12,6 +13,7 @@
    display: flex;
    flex-flow: row wrap;
    justify-content: center;
+   align-items: center;
 
    
    
@@ -19,6 +21,7 @@
 
 .skill{
     margin-right: 5%;
+    text-transform: uppercase;
 
 }
 
@@ -30,6 +33,7 @@
     border-radius: 2rem;
     text-align: center;
     overflow: hidden;
+    height: 2.5rem;
 }
 
 .bar-fill{
@@ -50,5 +54,11 @@
     z-index: 99;
     font-size: 2rem;
 
+    
+}
+
+.container p{
+    
+    margin:0.5rem;
     
 }

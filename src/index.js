@@ -9,6 +9,8 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <Progressbar
+      skill="React.js"
+      skillColor="pink"
       score={70}
       duration={2000}
       bgcolor1="rgb(66, 197, 245,0.3)"
