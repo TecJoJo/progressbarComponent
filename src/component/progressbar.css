@@ -19,6 +19,7 @@
 
 .skill{
     margin-right: 5%;
+
 }
 
 .bar-frame{
@@ -26,7 +27,7 @@
     
     width:50%;
     border: solid 1px black;
-    border-radius: 5vh;
+    border-radius: 2rem;
     text-align: center;
     overflow: hidden;
 }
@@ -47,5 +48,7 @@
     top: 50%;
     
     z-index: 99;
+    font-size: 2rem;
+
     
 }

@@ -8,7 +8,12 @@ import reportWebVitals from "./reportWebVitals";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Progressbar />
+    <Progressbar
+      score={70}
+      duration={2000}
+      bgcolor1="rgb(66, 197, 245,0.3)"
+      bgcolor2="rgb(201, 125, 245,0.8)"
+    />
   </React.StrictMode>
 );
 
